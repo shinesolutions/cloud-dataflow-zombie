@@ -13,8 +13,8 @@ Although this pattern is specific to our project, you could easily fork and adap
 
 e.g. `python rerun.py --project_id=<your_project_id> --jobs=<job_ids> --suffix=<optional_suffix>`
 
-- '--project_id', help='Your GCP project id'
-- '--jobs', help='A comma separated list of job ids to rerun'
-- '--suffix', nargs='?', help='A suffix to add the job name (optional)'
+- --project_id, 'Your GCP project id'
+- --jobs, 'A comma separated list of job ids to rerun'
+- --suffix, 'A suffix to add the job name (optional)'
 
 The script uses the default GCP credentials set to `GOOGLE_APPLICATION_CREDENTIALS` (https://developers.google.com/identity/protocols/application-default-credentials)
