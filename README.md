@@ -3,7 +3,7 @@ A rather crude Python script to easily rerun failed Cloud Dataflow **templated**
 
 https://cloud.google.com/dataflow/
 
-Sometimes your templated Cloud Dataflow pipelines will fail due to transiet errors. Or your bad code. Currently, there is no quick/easy way to rerun these failed pipelines. You can rerun the pipelines via the GCP console (_"Create job from template"_), but that requires a gazillion clicks, and you also have to remember all the paramter names/values/formats that it needs.
+Sometimes your templated Cloud Dataflow pipelines will fail due to transiet errors. Or your bad code. Currently, there is no quick/easy way to rerun these failed pipelines. You can rerun the pipelines via the GCP console (_"Create job from template"_), but that requires a gazillion clicks, and you also have to remember all the paramter names/values/formats that it needs. You can also use the `gcloud` tool, but again you need to provide all the parameters again, which would require you to examine each pipeline. This scrpt tries to work out all that for you instead, so you just need to pass the job id(s).
 
 https://cloud.google.com/dataflow/docs/templates/executing-templates
 
